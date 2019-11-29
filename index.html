@@ -14,6 +14,7 @@
     <body>
         <ul id="tools" class="dropdown-content">
             <li><a href="#!">Bestiary Downloader</a></li>
+            <li><a href="#!">Character Sheet</a></li>
         </ul>
         <ul id="adventures" class="dropdown-content">
             <li><a href="#!">The Red Swamp</a></li>
@@ -24,20 +25,27 @@
         <ul id="rulesets" class="dropdown-content">
             <li><a href="#!">Utility Abilities</a></li>
         </ul>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo center">Bioa10's Emberwind Stuff</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a class="dropdown-trigger" href="#!" data-target="tools">Tools</a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="adventures">Adventures</a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="classes">Classes</a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="rulesets">Rulesets</a></li>
-                </ul>
-            </div>
-        </nav>
-        
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">Bioa10's Emberwind Stuff</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a class="dropdown-trigger" href="#!" data-target="tools">Tools</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="adventures">Adventures</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="classes">Classes</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="rulesets">Rulesets</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="images/gallery-overgrowth.jpg"></div>
+        </div>
         <div class="container">
-            
+            <h5><p><center>Hello! I'm bioa10 and I work as a programmer and enjoy making random things for Emberwind. On this site you can find all of the projects I am working on for Emberwind.</center></p></h5>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="images/gallery-the-skies-of-axia.jpg"></div>
         </div>
         
         
@@ -46,7 +54,8 @@
         <script>
             $(document).ready(function(){
 
-                $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false, coverTrigger: false });
+                $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false, coverTrigger: false })
+                $('.parallax').parallax();
             
             });
         </script>
