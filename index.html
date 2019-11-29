@@ -39,6 +39,63 @@
                 </div>
             </nav>
         </div>
+        
+        <ul id="slide-out" class="sidenav hide-on-med-and-up">
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                    <a class="collapsible-header">Tools<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#!">Bestiary Downloader</a></li>
+                            <li><a href="#!">Character Sheet</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                    <a class="collapsible-header">Adventures<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#!">Bestiary Downloader</a></li>
+                            <li><a href="#!">Character Sheet</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                    <a class="collapsible-header">Classes<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#!">Bestiary Downloader</a></li>
+                            <li><a href="#!">Character Sheet</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                    <a class="collapsible-header">Rulesets<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#!">Bestiary Downloader</a></li>
+                            <li><a href="#!">Character Sheet</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        
         <div class="parallax-container">
             <div class="parallax"><img src="images/Red_Market.jpg"></div>
         </div>
@@ -77,8 +134,9 @@
         <script>
             $(document).ready(function(){
 
-                $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false, coverTrigger: false })
+                $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false, coverTrigger: false });
                 $('.parallax').parallax();
+                $('.sidenav').sidenav();
             
             });
         </script>
