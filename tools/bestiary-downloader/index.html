@@ -89,9 +89,54 @@
                 <p><h3 class="white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Bestiary Downloader</h3></p>
                 <br><br>
                 <p class="white-text">A simple tool to download all Foes from the official bestiary. Can even be run again to download any missing Foes.</p>
+                <br>
+                <a href="Bestiary_Downloader.exe" class="waves-effect waves-light btn-large" download><i class="material-icons left">file_download</i>Download exe</a>
+                <br><br><br><br>
+                <p class="white-text">The full python code is below if you would like to look over it before downloading or if you just wish to know how this tool works.</p>
+                <a href="Bestiary_Downloader.exe" class="waves-effect waves-light btn-small" download><i class="material-icons left">file_download</i>Python Script</a>
             </center>
             
+            <blockquote class="white-text" style="white-space: pre-wrap">import os
+import urllib.request as ul
+from urllib.request import *
+import re
+
+url = "https://www.emberwindgame.com/bestiary/"
+site = ul.urlopen(url)
+
+artless = ""
+while artless.lower() != "y" and artless.lower() != "n":
+    artless = input("Include artless pdfs? (Y/N) ")
+    
+foes = re.findall("https://.*pdf", site.read().decode("utf8"))
+
+if artless.lower() == "n":
+    foes = [foe for foe in foes if "artless" not in foe]
+
+if not os.path.exists("Foes"):
+    os.mkdir("Foes")
+
+newFoes = []
+ 
+for foe in foes:
+    name = foe.replace("https://www.emberwindgame.com/wp-content/uploads/Emberwind_","")
+    if not os.path.exists("Foes/"+name):
+        newFoes.append(foe)
+
+for foe in newFoes:
+    name = foe.replace("https://www.emberwindgame.com/wp-content/uploads/Emberwind_","")
+    if not os.path.exists("Foes/"+name):
+        print("["+str((newFoes.index(foe)+1))+"/"+str(len(newFoes))+"] Downloading "+name.replace(".pdf","")+" to "+os.path.abspath("Foes/"+name))
+        ul.urlretrieve(foe, "Foes/"+name)
+
+site.close()
+
+print("Finished!")
+
+input()</blockquote>
+            
         </div>
+
         
         <script type="text/javascript" src="../../js/materialize.min.js"></script>
         <script>
