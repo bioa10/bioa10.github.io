@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
+        <script type="text/javascript" src="../../js/jquery.min.js"></script>
+        
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Bioa10's Emberwind Stuff</title>
+    </head>
+
+    <body class="blue-grey darken-3">
+        <ul id="tools" class="dropdown-content red lighten-2">
+            <li><a href="../../tools/bestiary-downloader">Bestiary Downloader</a></li>
+            <li><a href="../../tools/character-sheet/">Character Sheet</a></li>
+        </ul>
+        <ul id="adventures" class="dropdown-content red lighten-2">
+            <li><a href="#!">The Red Swamp</a></li>
+        </ul>
+        <ul id="classes" class="dropdown-content red lighten-2">
+            <li><a href="../../classes/chessmaster/">Chessmaster</a></li>
+        </ul>
+        <ul id="rulesets" class="dropdown-content red lighten-2">
+            <li><a href="#">Utility Abilities</a></li>
+        </ul>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" data-target="slide-out" class="brand-logo sidenav-trigger left"><i class="material-icons">menu</i></a>
+                    <a href="../../" class="brand-logo center hide-on-small-only" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Bioa10's Emberwind Stuff</a>
+                    <a href="../../" class="brand-logo center hide-on-med-and-up" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Bioa's Stuff</a>
+                    
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a class="dropdown-trigger" href="#!" data-target="tools" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Tools</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="adventures" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Adventures</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="classes" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Classes</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="rulesets" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Rulesets</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <ul id="slide-out" class="sidenav red lighten-2">
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Tools<i class="material-icons" style="color:white">arrow_drop_down</i></a>
+                        <div class="collapsible-body red lighten-3">
+                            <ul>
+                                <li><a href="../../tools/bestiary-downloader" class="white-text">Bestiary Downloader</a></li>
+                                <li><a href="../../tools/character-sheet/" class="white-text">Character Sheet</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="collapsible-header white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Adventures<i class="material-icons" style="color:white">arrow_drop_down</i></a>
+                        <div class="collapsible-body red lighten-3">
+                            <ul>
+                                <li><a href="#!" class="white-text">The Red Swamp</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="collapsible-header white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Classes<i class="material-icons" style="color:white">arrow_drop_down</i></a>
+                        <div class="collapsible-body red lighten-3">
+                            <ul>
+                                <li><a href="../../classes/chessmaster/" class="white-text">Chessmaster</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="collapsible-header white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Rulesets<i class="material-icons" style="color:white">arrow_drop_down</i></a>
+                        <div class="collapsible-body red lighten-3">
+                            <ul>
+                                <li><a href="#" class="white-text">Utility Abilities</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="container">
+            <center><p><h3 class="white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Utility Abilities</h3></p>
+            <br><br>
+            <p class="white-text">This is a simple system intended to help flesh out characters and provide them with useful abilities outside of combat. Each Hero may choose a number of abilities equal to their tier, and may change these abilities whenever they increase in tier or if the Storyteller permits.<br><br>There are two ways to use this system. The first is by sorting abilities by class with a few general abilities. The second is to sort the abilities into themes called archetypes. If using the class sorting, Heroes may choose any ability from the general list or from their class list. If using the archetype sorting, Heroes may choose any ability from their archetype list.</p>
+            </center>
+            <br>
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs red lighten-2">
+                        <li class="tab col s6"><a class="active white-text" href="#class" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Class</a></li>
+                        <li class="tab col s6"><a class="white-text" href="#archetype" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Archetype</a></li>
+                    </ul>
+                </div>
+                <div id="class" class="col s12">
+                    <div class="row">
+                        <div class="col s12">
+                            <ul class="tabs red lighten-2">
+                                <li class="tab col s4"><a class="active white-text" href="#harbingers" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Harbingers</a></li>
+                                <li class="tab col s4"><a class="white-text" href="#soldiers" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Soldiers</a></li>
+                                <li class="tab col s4"><a class="white-text" href="#commanders" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Commanders</a></li>
+                            </ul>
+                        </div>
+                        <div id="harbingers" class="col s12">
+                            <ul class="collection with-header">
+                                <li class="collection-header"><h5 style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Ardent</h5></li>
+                                <li class="collection-item"><b>Give Me Fuel:</b> When you gaze intensely into someone's eyes, you may ask them “What fuels the flames of your desire?” and they’ll answer with the truth.</li>
+                                <li class="collection-item"><b>Explosive Charge:</b> You can set up a simple explosive charge which will blow through simple terrain. This takes time to set up making it unusable in combat.</li>
+                                <li class="collection-item"><b>Coat of Flames:</b> You can wear a coat of flames which protects you from both extreme cold and heat.</li>
+                            </ul>
+                            <ul class="collection with-header">
+                                <li class="collection-header"><h5 style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Druid</h5></li>
+                                <li class="collection-item"><b>Cleanse:</b> You can cleanse food and drink of any ill effects.</li>
+                                <li class="collection-item"><b>Passage of Time:</b> You can cause time to rapidly accelerate on objects that you touch, such as causing wood to rot or food spoiling.</li>
+                                <li class="collection-item"><b>Tools of Life:</b> You can create basic tools from plant life around you.</li>
+                            </ul>
+                            <ul class="collection with-header">
+                                <li class="collection-header"><h5 style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Invoker</h5></li>
+                                <li class="collection-item"><b>Illusive Guise:</b> You can change your appearance at will. This is a simple illusion and does not alter the tactile or audible components of you or your equipment.</li>
+                                <li class="collection-item"><b>Defile:</b> You can curse food and drink, making it unfit to consume. Creatures that consume cursed items feel as if they have eaten rotten food.</li>
+                                <li class="collection-item"><b>Mold Earth:</b> You can mold earthen materials as if it were clay.</li>
+                            </ul>
+                        </div>
+                        <div id="soldiers" class="col s12">
+                            <ul class="collection with-header">
+                                <li class="collection-header"><h5 style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Ardent</h5></li>
+                                <li class="collection-item"><b>Give Me Fuel:</b> When you gaze intensely into someone's eyes, you may ask them “What fuels the flames of your desire?” and they’ll answer with the truth.</li>
+                                <li class="collection-item"><b>Explosive Charge:</b> You can set up a simple explosive charge which will blow through simple terrain. This takes time to set up making it unusable in combat.</li>
+                                <li class="collection-item"><b>Coat of Flames:</b> You can wear a coat of flames which protects you from both extreme cold and heat.</li>
+                            </ul>
+                            <ul class="collection with-header">
+                                <li class="collection-header"><h5 style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Druid</h5></li>
+                                <li class="collection-item"><b>Cleanse:</b> You can cleanse food and drink of any ill effects.</li>
+                                <li class="collection-item"><b>Passage of Time:</b> You can cause time to rapidly accelerate on objects that you touch, such as causing wood to rot or food spoiling.</li>
+                                <li class="collection-item"><b>Tools of Life:</b> You can create basic tools from plant life around you.</li>
+                            </ul>
+                            <ul class="collection with-header">
+                                <li class="collection-header"><h5 style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Invoker</h5></li>
+                                <li class="collection-item"><b>Illusive Guise:</b> You can change your appearance at will. This is a simple illusion and does not alter the tactile or audible components of you or your equipment.</li>
+                                <li class="collection-item"><b>Defile:</b> You can curse food and drink, making it unfit to consume. Creatures that consume cursed items feel as if they have eaten rotten food.</li>
+                                <li class="collection-item"><b>Mold Earth:</b> You can mold earthen materials as if it were clay.</li>
+                            </ul>
+                        </div>
+                        <div id="commanders" class="col s12">
+                            <ul class="collection with-header">
+                                <li class="collection-header"><h5 style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Ardent</h5></li>
+                                <li class="collection-item"><b>Give Me Fuel:</b> When you gaze intensely into someone's eyes, you may ask them “What fuels the flames of your desire?” and they’ll answer with the truth.</li>
+                                <li class="collection-item"><b>Explosive Charge:</b> You can set up a simple explosive charge which will blow through simple terrain. This takes time to set up making it unusable in combat.</li>
+                                <li class="collection-item"><b>Coat of Flames:</b> You can wear a coat of flames which protects you from both extreme cold and heat.</li>
+                            </ul>
+                            <ul class="collection with-header">
+                                <li class="collection-header"><h5 style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Druid</h5></li>
+                                <li class="collection-item"><b>Cleanse:</b> You can cleanse food and drink of any ill effects.</li>
+                                <li class="collection-item"><b>Passage of Time:</b> You can cause time to rapidly accelerate on objects that you touch, such as causing wood to rot or food spoiling.</li>
+                                <li class="collection-item"><b>Tools of Life:</b> You can create basic tools from plant life around you.</li>
+                            </ul>
+                            <ul class="collection with-header">
+                                <li class="collection-header"><h5 style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Invoker</h5></li>
+                                <li class="collection-item"><b>Illusive Guise:</b> You can change your appearance at will. This is a simple illusion and does not alter the tactile or audible components of you or your equipment.</li>
+                                <li class="collection-item"><b>Defile:</b> You can curse food and drink, making it unfit to consume. Creatures that consume cursed items feel as if they have eaten rotten food.</li>
+                                <li class="collection-item"><b>Mold Earth:</b> You can mold earthen materials as if it were clay.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="archetype" class="col s12">
+                    <ul class="collection with-header">
+                        <li class="collection-header"><h5>Healer</h5></li>
+                        <li class="collection-item">Alvin</li>
+                        <li class="collection-item">Alvin</li>
+                        <li class="collection-item">Alvin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+        <script type="text/javascript" src="../../js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false, coverTrigger: false });
+                $('.sidenav').sidenav();
+                $('.collapsible').collapsible();
+                $(".dropdown-content>li>a").css("color", "#ffffff");
+                $('.tabs').tabs();
+            });
+        </script>
+    </body>
+</html>
