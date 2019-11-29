@@ -15,8 +15,8 @@
 
     <body class="blue-grey darken-3">
         <ul id="tools" class="dropdown-content red lighten-2">
-            <li><a href="#">Bestiary Downloader</a></li>
-            <li><a href="../character-sheet/">Character Sheet</a></li>
+            <li><a href="../bestiary-downloader/">Bestiary Downloader</a></li>
+            <li><a href="#">Character Sheet</a></li>
         </ul>
         <ul id="adventures" class="dropdown-content red lighten-2">
             <li><a href="#!">The Red Swamp</a></li>
@@ -51,8 +51,8 @@
                         <a class="collapsible-header white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Tools<i class="material-icons" style="color:white">arrow_drop_down</i></a>
                         <div class="collapsible-body red lighten-3">
                             <ul>
-                                <li><a href="#" class="white-text">Bestiary Downloader</a></li>
-                                <li><a href="../character-sheet/" class="white-text">Character Sheet</a></li>
+                                <li><a href="../bestiary-downloader/" class="white-text">Bestiary Downloader</a></li>
+                                <li><a href="#" class="white-text">Character Sheet</a></li>
                             </ul>
                         </div>
                     </li>
@@ -86,55 +86,13 @@
         
         <div class="container">
             <center>
-                <p><h3 class="white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Bestiary Downloader</h3></p>
+                <p><h3 class="white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Character Sheet</h3></p>
                 <br><br>
-                <p class="white-text">A simple tool to download all Foes from the official bestiary found at <a href="https://www.emberwindgame.com/bestiary/">https://www.emberwindgame.com/bestiary/</a>. Can even be run again to download any missing Foes. The tool will download the files into a folder called "Foes" in the same location that the .exe is located in.</p>
-                <br>
-                <a href="Bestiary_Downloader.exe" class="waves-effect waves-light btn-large" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;" download><i class="material-icons left">file_download</i>Download exe</a>
-                <br><br><br><br>
-                <p class="white-text">The full python code is below if you would like to look over it before downloading or if you just wish to know how this tool works.</p>
-                <a href="Bestiary_Downloader.py" class="waves-effect waves-light btn-small" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;" download><i class="material-icons left">file_download</i>Python Script</a>
+                <p class="white-text">This is a simple character sheet that I have created using Google Sheets to have an editable character sheet saved online. I have included functionality for the sheet to do as much of the math for the character as I could. Currently my character sheet only supports Aspect character creation.</p>
+                <p class="white-text">In order to use this, click the button below to go to the Google Sheets page for the character sheet. In the top left press <b>File>Make a copy</b> and choose a name for the file. Once you have a copy, you can fill it out as normal. Blue fields indicate cells that are being used for math calculations and should not be edited. Dark gray fields indicate fields that your character does not have access to yet.</p>
+                <br><br>
+                <a href="https://docs.google.com/spreadsheets/d/1iWyxYlvby9dOGsIICG-_KUOmKGjSdp54x7wUUr4rHEY/edit?usp=sharing" class="waves-effect waves-light btn-large" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;" target="_blank"><i class="material-icons left">link</i>Google Sheet</a>
             </center>
-            
-            <blockquote class="white-text" style="white-space: pre-wrap">import os
-import urllib.request as ul
-from urllib.request import *
-import re
-
-url = "https://www.emberwindgame.com/bestiary/"
-site = ul.urlopen(url)
-
-artless = ""
-while artless.lower() != "y" and artless.lower() != "n":
-    artless = input("Include artless pdfs? (Y/N) ")
-    
-foes = re.findall("https://.*pdf", site.read().decode("utf8"))
-
-if artless.lower() == "n":
-    foes = [foe for foe in foes if "artless" not in foe]
-
-if not os.path.exists("Foes"):
-    os.mkdir("Foes")
-
-newFoes = []
- 
-for foe in foes:
-    name = foe.replace("https://www.emberwindgame.com/wp-content/uploads/Emberwind_","")
-    if not os.path.exists("Foes/"+name):
-        newFoes.append(foe)
-
-for foe in newFoes:
-    name = foe.replace("https://www.emberwindgame.com/wp-content/uploads/Emberwind_","")
-    if not os.path.exists("Foes/"+name):
-        print("["+str((newFoes.index(foe)+1))+"/"+str(len(newFoes))+"] Downloading "+name.replace(".pdf","")+" to "+os.path.abspath("Foes/"+name))
-        ul.urlretrieve(foe, "Foes/"+name)
-
-site.close()
-
-print("Finished!")
-
-input()</blockquote>
-            
         </div>
 
         
