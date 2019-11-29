@@ -4,3 +4,11 @@
 .dropdown-content li:hover, .dropdown-content li.active {
   background-color: #f36565;
 }
+
+@font-face {
+    font-family: 'Kungfont';
+    src: url('../fonts/Kungfont-Regular.woff2') format('woff2'),
+        url('../fonts/Kungfont-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
