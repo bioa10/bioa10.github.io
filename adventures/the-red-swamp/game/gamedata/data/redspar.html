@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<nav>
+	<div class="nav-wrapper blue lighten-1">
+	  <ul id="nav-mobile" class="left hide-on-med-and-down">
+		<li><a href="../index.html">Menu</a></li>
+	  </ul>
+	</div>
+</nav>
+<head>
+<meta charset="UTF-8">
+<title>Lord Redspar</title>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+<link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<p>The next morning you begin to head to the address listed on the letter. As you arrive, you see the the address leads to a small humble mansion with a massive garden. From the garden wafts the very sweet scent of flowers from around the world. You notice a few others walking down the path to the mansion as well, most likely to assist in the same request you were called for. If you do not know your allies already, you should probably introduce yourself before you get to the gate of the garden.</p>
+<center>
+<a class="btn blue lighten-1" id="gate" onclick="this.style.visibility = 'hidden'; document.getElementById('meeting').style.visibility = 'visible'; document.getElementById('chat').style.visibility = 'visible';">Open the Gate</a>
+</center>
+<p id="meeting" style="visibility:hidden">Opening the gate, you notice a very large man sitting at a small round garden table.</p>
+<center>
+<a class="waves-effect waves-light btn blue lighten-1" id="chat" onclick="location.href = 'redsparchat.html';localStorage.position='redsparchat';" style="visibility:hidden">Continue</a>
+</center>
+<script>
+if (localStorage.position != "redspar") {
+	location.href = localStorage.position+".html"
+}
+</script>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+	background-image: url("../images/paper2.jpg");
+	margin-left:5%;
+	margin-right:5%;
+}
+p {
+	white-space:pre-wrap;
+}
+nav {
+	width:111.1%;
+	margin-left:-5.55%;
+}

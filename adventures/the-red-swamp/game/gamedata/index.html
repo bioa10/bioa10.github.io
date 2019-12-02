@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<nav>
+	<div class="nav-wrapper blue lighten-1">
+	  <ul id="nav-mobile" class="left hide-on-med-and-down">
+		<li><a href="index.html">Menu</a></li>
+	  </ul>
+	</div>
+</nav>
+<head>
+<meta charset="UTF-8">
+<title>The Red Swamp</title>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+<body>
+
+<center>
+<h3 style="margin-bottom:-10px;">The Red Swamp</h3>
+<h5 style="margin-bottom:50px;">A Savage Worlds adventure converted as an Emberwind GMless adventure.</h5>
+</center>
+<p>The world of Tarth is filled with dwarven strongholds, dark elven forests, valleys of merry half-folk, and scattered human cities.
+
+But it wasn’t always so.
+
+More than a thousand years ago, a race of savage spider-like creatures infested the land.
+
+Legend says the spiders nearly wiped out the intelligent races. This time of troubles is called “the Scourge.” Fortunately, a great human heroine named Tarrian united the elves, dwarves, humans, and half-folk against them. The alliance banded together and battled the arachnoids in the fields, in the valleys, and deep within their very lairs. When the alliance was through, they hunted down any stragglers and eventually drove the entire species into total extinction.
+
+After the Scourge, with no common enemy to fight, the races warred with one another. At least three Great Race Wars have scarred the lands of Tarth. The last was just over a decade ago.
+
+Valusia, the middle kingdom, where our tale takes place, is currently at peace, however, both with the races and with its neighbors. This peace has existed for the last dozen years, since the coming of King Crassus Kaden.
+
+Note: Heroes in Tarth are a Big Deal. Everyone wants to be one, and emulates the famous ones like brainwashed teenagers today worship movie-stars. That means your group ought to jump at the chance to get in on some adventure.
+</p>
+
+<div id="result"></div>
+<center>
+<a class="waves-effect waves-light btn blue lighten-1" id="continue" onclick="continueGame()">Start Game</a>
+
+<a class="waves-effect waves-light btn blue lighten-1" id="clear" onclick="clearProgress()">Reset Progress</a>
+<br><br>
+<a class="waves-effect waves-light btn blue lighten-1" id="pregen" onclick="location.href='data/pregen.html'">Pre-generated Characters</a>
+<br><br>
+<a class="waves-effect waves-light btn blue lighten-1" id="creation" onclick="location.href='data/creation.html'">Custom Character Guide</a>
+</center>
+<script>
+
+if (!localStorage.started) {
+    localStorage.started = "false"
+} else if (localStorage.started == "true") {
+    document.getElementById("continue").innerHTML = "Continue Game"
+}
+
+function clearProgress() {
+    localStorage.clear()
+	localStorage.started = "false"
+    document.getElementById("continue").innerHTML = "Start Game"
+}
+function continueGame() {
+	if(localStorage.started == "false") {
+		localStorage.started = "true"
+		localStorage.position = "intro"
+	}
+	location.href = "data/"+localStorage.position+".html"
+}
+</script>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
