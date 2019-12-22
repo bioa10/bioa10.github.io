@@ -1,5 +1,5 @@
 .parallax-container {
-    height: 400px;
+    height: 40vh;
 }
 .dropdown-content li:hover, .dropdown-content li.active {
   background-color: #f36565;
