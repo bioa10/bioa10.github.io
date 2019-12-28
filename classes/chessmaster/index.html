@@ -91,843 +91,849 @@
             <q>Battle is no different than a game of Chess. Like chess, my first move has already decided your fate.</q>
             </blockquote>
             <p class="white-text">The Chessmaster tactically leads his allies to victory through unparalleled teamwork and camaraderie. Always able to imagine not only the battlefield, but the mindsets of enemy and ally alike, the Chessmaster is able to guide the flow of battle in whatever way he sees fit.</p>
-            <br><p><h5 class="white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Tier 1</h5></p>
-            <div style="overflow-x: auto">
-                <p class="white-text">Class Traits</p>
-                <table class="red lighten-2 striped">
-                    <thead class="white-text">
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th><center>Type</center></th>
-                            <th><center>Target</center></th>
-                            <th><center>Range</center></th>
-                            <th></th>
-                            <th style="min-width:300px">Effect</th>
-                            <th><center>Action Speed</center></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="red lighten-4">
-                        <tr>
-                            <th></th>
-                            <td><b>Aschente</b></td>
-                            <td><center>Passive</center></td>
-                            <td><center>1 Foe</center></td>
-                            <td><center>Ranged<br>Field</center></td>
-                            <th></th>
-                            <td>At the start of Combat, you may place an 8x8 Local Field Effect that includes you within the effect. This is your Board. All of your Actions that have Ranged 3 now have Ranged Board, which includes all squares within the Board and no squares outside of it. You are a King and may also designate a Foe on the board as a King. Kings cannot leave the Board. You may cancel this effect as a Slow Action. If you have multiple abilities which designate Kings, you must designate the same Foe for all of them.</td>
-                            <td><center>-</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Inaugurate</b></td>
-                            <td><center>Passive</center></td>
-                            <td><center>All Heroes</center></td>
-                            <td><center>Ranged<br>Field</center></td>
-                            <th></th>
-                            <td>At the start of Combat, you gain 1 Queen, 2 Knights, 2 Bishops, 2 Rooks, and 8 Pawns as available designations. At any point during combat, you may designate Other Heroes as a piece and the designation lasts until the end of Combat and cannot be changed. Class Actions that list Pieces in the Target can only be used on those Pieces but gain their Inaugurate effect. Any action may be used on a Pawn without the Inaugurate effect.</td>
-                            <td><center>-</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>King's Orders</b></td>
-                            <td><center>Passive</center></td>
-                            <td><center>All Other Heroes</center></td>
-                            <td><center>Ranged<br>Field</center></td>
-                            <th></th>
-                            <td>At the start of each Other Hero’s turn, the Chessmaster may suggest an action for that Hero to take. That Hero gains a +/- 1 to a single roll or +1 square of movement for the next action they take this turn which follows the Chessmaster’s suggestion. <b>Inaugurate:</b> +/-2 instead.</td>
-                            <td><center>-</center></td>
-                            <th></th>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-                <p class="white-text">Class Actions</p>
-                <table class="blue lighten-1 striped">
-                    <thead class="white-text">
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th><center>Type</center></th>
-                            <th><center>Target</center></th>
-                            <th><center>Range</center></th>
-                            <th></th>
-                            <th style="min-width:300px">Effect</th>
-                            <th><center>Action Speed</center></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="blue lighten-4">
-                        <tr>
-                            <th></th>
-                            <td><b>Pawn's Might</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Hero</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Target Hero may make a Basic Melee Attack with +2 <b>A</b> to the <b>CAP</b> Check. <b>Delayable.</b></td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Bishop's Sight</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Hero</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Target Hero may make a Basic Ranged Attack with a +2 to Range. <b>Delayable.</b></td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Fortify</b></td>
-                            <td><center>Sustain<br>Exploit</center></td>
-                            <td><center>1 Hero (Rook, Queen)</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Fortify may not be used if you have taken a Move Action this turn. +3 Toughness and you cannot take a Move Action until your next Turn. <b>Inaugurate:</b> +1 Toughness. <i>Sust. Effect:</i> Repeat Effect.</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>En Passant</b></td>
-                            <td><center>Trigger<br>Exploit</center></td>
-                            <td><center>1 Hero (Pawn)</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td><i>Trig. Cond.:</i> If a Foe moves adjacent to Target Hero,<br><i>Trig. Effect:</i> -2 <b>A</b> to Target Hero's <b>CAP</b> Check. Target Hero makes a Basic Melee Attack. <b>Inaugurate:</b> There is no penalty to <b>A</b>.</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Empower</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Hero (Bishop, Knight, Queen)</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Empower may not be used if you have taken a Move Action this turn. +1 Damage <b><i>OR</i></b> Healing Die to Target Hero's next Action and you cannot take a Move Action until your next Turn. Once per Turn. <b>Inaugurate:</b> This may be used twice per Turn but the second use may not be on a Pawn.</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Mind Games</b></td>
-                            <td><center>Trigger<br>Exploit</center></td>
-                            <td><center>1 Foe</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td><i>Trig. Cond.:</i> If a Hero uses a Move or Shift action,<br><i>Trig. Effect:</i> You may move the Target Foe 1 square.</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>E1 to E3</b></td>
-                            <td><center>Amplify<br>Exploit</center></td>
-                            <td><center>1 Shift Action</center></td>
-                            <td><center>-</center></td>
-                            <th></th>
-                            <td><i>Amp. Effect:</i> +1 Shift movement.</td>
-                            <td><center>Free</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-							<th></th>
-                            <td><b>My Turn</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>All Other Heroes</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>All Target Heroes may make a Shift Action. <i>Amp Effect:</i> Expend an additional Fast Action to allow 1 Target Hero to make a Basic Melee Attack after their Shift Action.</td>
-                            <td><center>Slow+Fast</center></td>
-                            <th></th>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="white-text">Class Tide-Turners</p>
-                <table class="orange lighten-1 striped">
-                    <thead class="white-text">
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th><center>Type</center></th>
-                            <th><center>Target</center></th>
-                            <th><center>Range</center></th>
-                            <th></th>
-                            <th style="min-width:300px">Effect</th>
-                            <th><center>Action Speed</center></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="orange lighten-4">
-                        <tr>
-                            <th></th>
-                            <td><b>Promotion</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Other Hero (Pawn)</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Target Hero may select 2 Class Actions from another Hero and use those actions as if they had them until the end of the encounter. <b>Inaugurate:</b> Gain 1 additional Class Action and the Chessmaster may change the Target Hero’s designation to any besides King.
-							</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Castling</b></td>
-                            <td><center>Trigger<br>Exploit</center></td>
-                            <td><center>1 Other Hero (Rook)</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td><i>Trig. Cond.:</i> If you are the Target of a Foe's Action,<br><i>Trig. Effect:</i> Cancel that Action. Swap positions with Target Hero. Target Hero gains +4 Toughness until the end of their next Turn. <b>Inaugurate:</b> +4 Resistance in addition.</td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Predict the Enemy</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>All Other Combatants</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Predict The Enemy may not be used if you have taken a Move Action this turn. At the beginning of your next Turn, you may move each Target Combatant to any other location within Range. Target Combatants are determined by who is in Range at the beginning of the Turn this activates. You cannot take a Move Action until your next Turn.</td>
-                            <td><center>Slow+Slow</center></td>
-                            <th></th>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-			<br><p><h5 class="white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Tier 2</h5></p>
-			<div style="overflow-x: auto">
-                <p class="white-text">Class Traits</p>
-                <table class="red lighten-2 striped">
-                    <thead class="white-text">
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th><center>Type</center></th>
-                            <th><center>Target</center></th>
-                            <th><center>Range</center></th>
-                            <th></th>
-                            <th style="min-width:300px">Effect</th>
-                            <th><center>Action Speed</center></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="red lighten-4">
-                        <tr>
-                            <th></th>
-                            <td><b>Embody Piece</b></td>
-                            <td><center>Amplify<br>Exploit</center></td>
-                            <td><center>1 Action</center></td>
-                            <td><center>-</center></td>
-                            <th></th>
-                            <td>When using an ability which lists a piece in its Target, you may grant the Target an additional effect based on the piece.
-							<br>&nbsp;&nbsp;&nbsp;&nbsp;Pawn: +2 <b>A</b> on next <b>CAP</b> check.
-							<br>&nbsp;&nbsp;&nbsp;&nbsp;Bishop: +2 Range on next Action.
-							<br>&nbsp;&nbsp;&nbsp;&nbsp;Rook: +2 Toughness for 1 Round.
-							<br>&nbsp;&nbsp;&nbsp;&nbsp;Knight: +1 Damage Dice next Damage-dealing Action.
-							<br>&nbsp;&nbsp;&nbsp;&nbsp;Queen: Advantage on next roll.
-							</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Perfect Timing</b></td>
-                            <td><center>Passive</center></td>
-                            <td><center>-</center></td>
-                            <td><center>-</center></td>
-                            <th></th>
-                            <td>When you use an Action with the <b>Delayable</b> tag, the Chessmaster may allow the Target to choose when the ability is used instead of being used immediately. The Target may use the delayed Action on their Turn as a Free Action. A Hero may only have one Delayed Action at a time.</td>
-                            <td><center>-</center></td>
-                            <th></th>
-                        </tr>                       
-                    </tbody>
-                </table>
-                <p class="white-text">Class Actions</p>
-                <table class="blue lighten-1 striped">
-                    <thead class="white-text">
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th><center>Type</center></th>
-                            <th><center>Target</center></th>
-                            <th><center>Range</center></th>
-                            <th></th>
-                            <th style="min-width:300px">Effect</th>
-                            <th><center>Action Speed</center></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="blue lighten-4">
-                        <tr>
-                            <th></th>
-                            <td><b>Rook's Strength</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Hero</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Target Hero may make a Basic Melee Attack which pushes the Foe 3 squares directly away from the Target Hero. <b>Delayable</b>.</td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Lance's Charge</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Hero</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Target Hero may move up to 5 squares in a straight line and make a Basic Melee Attack with +2x[number of squares moved] extra damage. <b>Delayable.</b></td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Shifting Strike</b></td>
-                            <td><center>Amplify<br>Exploit</center></td>
-                            <td><center>1 Shift Action</center></td>
-                            <td><center>-</center></td>
-                            <th></th>
-                            <td><i>Amp. Effect:</i> You may make a Basic Melee Attack after this Shift Action.</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Tactical Move</b></td>
-                            <td><center>Amplify<br>Exploit</center></td>
-                            <td><center>1 Shift Action</center></td>
-                            <td><center>-</center></td>
-                            <th></th>
-                            <td><i>Amp. Effect:</i> You allow another Hero within Range 3 (or Board) to make an immediate Shift Action.</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Sword Eruption</b></td>
-                            <td><center>General<br>Spell</center></td>
-                            <td><center>1 Hero (Knight, Queen)</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Sword Eruption may not be used if you have taken a Move Action this turn. [Tier]d6 <i><b>PIERCING</b></i> Damage to all Foes in Range 1 of Target Hero and you cannot use a Move Action until your next Turn. <b>Inaugurate:</b> Damages all Foes in Range 2 of Target Hero instead. <b>Delayable.</b></td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Divine Lighting</b></td>
-                            <td><center>General<br>Spell</center></td>
-                            <td><center>1 Hero (Bishop, Queen)</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Divine Lightning may not be used if you have taken a Move Action this Turn. Target Hero deals [Tier+1]d6 <i><b>PIERCING</b></i> Damage to all Foes in a straight line up to Range 5. Each Foe hit reduces the damage that the next Foe receives by the amount that they received. You cannot take a Move Action until your next Turn. <b>Inaugurate:</b> Deals an additional Damage Die. <b>Delayable.</b></td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Binding Chains</b></td>
-                            <td><center>General<br>Spell</center></td>
-                            <td><center>1 Hero (Rook, Queen)</center></td>
-                            <td><center>Ranged<br>3</br></center></td>
-                            <th></th>
-                            <td>Binding Chains may not be used if you have taken a Move Action this turn. All Foes within Range 2 of the Target Hero may not move from their square on their next Turn and you cannot take a Move Action until your next Turn. <b>Inaugurate:</b> Deal [Tier] Damage to each Foe affected. <b>Delayable.</b></td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-							<th></th>
-                            <td><b>My Rules</b></td>
-                            <td><center>Sustain<br>Spell</center></td>
-                            <td><center>All Foes</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Foes can not leave the Range of this Action. <i>Sust. Effect:</i> Repeat Effect.</td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="white-text">Class Tide-Turners</p>
-                <table class="orange lighten-1 striped">
-                    <thead class="white-text">
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th><center>Type</center></th>
-                            <th><center>Target</center></th>
-                            <th><center>Range</center></th>
-                            <th></th>
-                            <th style="min-width:300px">Effect</th>
-                            <th><center>Action Speed</center></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="orange lighten-4">
-                        <tr>
-                            <th></th>
-                            <td><b>Shifting Tides</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Other Hero</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Target Hero does not need to spend a Tide-Turner Charge on their next Tide-Turner.</td>
-                            <td><center>Free</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>New Frame of Mind</b></td>
-                            <td><center>Sustain<br>Exploit</center></td>
-                            <td><center>All Foes</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>New Frame of Mind may not be used if you have taken a Move Action this turn. Target Foes has 4 vulnerability. You cannot take a Move Action until your next Turn. <i>Sust. Effect:</i> Repeat Effect.</td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Desperado</b></td>
-                            <td><center>Trigger<br>Exploit</center></td>
-                            <td><center>1 Hero</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td><i>Trig. cond:</i> When the Target Hero takes damage,
-							<br><i>Trig. Effect: </i>If this Damage would cause the Target Hero to become <i><b>FALLEN</b></i>, the Target Hero may immediately take a full turn before applying the Damage. Otherwise, the Target Hero may immediately make two Basic Weapon Attacks.</br>
-							</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-			<br><p><h5 class="white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Tier 3</h5></p>
-			<div style="overflow-x: auto">
-                <p class="white-text">Class Traits</p>
-                <table class="red lighten-2 striped">
-                    <thead class="white-text">
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th><center>Type</center></th>
-                            <th><center>Target</center></th>
-                            <th><center>Range</center></th>
-                            <th></th>
-                            <th style="min-width:300px">Effect</th>
-                            <th><center>Action Speed</center></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="red lighten-4">
-                        <tr>
-                            <th></th>
-                            <td><b>King's Game</b></td>
-                            <td><center>Passive</center></td>
-                            <td><center>1 Foe</center></td>
-                            <td><center>Ranged<br>Field</center></td>
-                            <th></th>
-                            <td>You are a King and may also designate a Foe on the board as a King at the start of the Combat Encounter. Kings may not Target Each other with Damage dealing abilities and may not move adjacent to each other. You may cancel this effect as a Slow Action. If you have multiple abilities which designate Kings, you must designate the same Foe for all of them.</td>
-                            <td><center>-</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Shogi Board</b></td>
-                            <td><center>Passive</center></td>
-                            <td><center>-</center></td>
-                            <td><center>-</center></td>
-                            <th></th>
-                            <td>At the start of Combat, you may place a 9x9 Local Field Effect. This is your Board. All of your Actions that have Ranged 3 now have Ranged Board, which includes all squares within the Board and no squares outside of it. You may cancel this effect as a Slow Action. If you have Aschente, this upgrades Aschente’s Board to 9x9.</td>
-                            <td><center>-</center></td>
-                            <th></th>
-                        </tr>                       
-                    </tbody>
-                </table>
-                <p class="white-text">Class Actions</p>
-                <table class="blue lighten-1 striped">
-                    <thead class="white-text">
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th><center>Type</center></th>
-                            <th><center>Target</center></th>
-                            <th><center>Range</center></th>
-                            <th></th>
-                            <th style="min-width:300px">Effect</th>
-                            <th><center>Action Speed</center></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="blue lighten-4">
-                        <tr>
-                            <th></th>
-                            <td><b>Knight's Spear</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Hero</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Target Hero may make a Basic Melee Attack with +2 Range. <b>Delayable</b>.</td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Silver General's Reposition</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Hero</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Target Hero may make a Basic Weapon Attack and then make an immediate Shift Action. <b>Delayable.</b></td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Like an Open Book</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Foe</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Target Foe rolls its d6 to determine its Action Chain for its next Turn immediately and the Chessmaster learns which Actions it will take. If playing with a Storyteller, they must tell the Chessmaster which Actions the Foe will take and must follow through with those Actions on the Foe’s next Turn.</td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Breakthrough</b></td>
-                            <td><center>Amplify<br>Exploit</center></td>
-                            <td><center>1 Action</center></td>
-                            <td><center>-</center></td>
-                            <th></th>
-                            <td>Target Hero gains the Inaugurate effect of the Target Action if they do not already receive it. If you have Inaugurate, this can only be used on Actions that Target a Pawn.</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Bodyguard</b></td>
-                            <td><center>Sustain<br>Exploit</center></td>
-                            <td><center>1 Hero (Rook, Queen)</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Bodyguard may not be used if you have taken a Move Action this Turn. Heroes adjacent to the Target have Advantage on Dodge rolls and you cannot take a Move Action until your next Turn. <b>Inaugurate:</b> The Target Hero also have Advantage on Dodge rolls. <i>Sust. Effect:</i> Repeat Effect</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Crushing Presence</b></td>
-                            <td><center>General<br>Spell</center></td>
-                            <td><center>1 Hero (Bishop, Queen)</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Crushing Presence may not be used if you have taken a Move Action this Turn. All Foes within Range 3 of Target Hero are knocked PRONE and you cannot take a Move Action until your next Turn. <b>Inaugurate:</b> Affected Foes also gain the DAZE condition for 1 Round. <b>Delayable.</b></td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Opportune Strike</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Hero (Knight, Queen)</center></td>
-                            <td><center>Ranged<br>3</br></center></td>
-                            <th></th>
-                            <td>Opportune Strike may not be used if you have taken a Move Action this Turn. Target Hero makes a Basic Melee Attack with <i><b>AUTO-HIT</b></i> and you cannot take a Move Action until your next Turn. <b>Inaugurate:</b> Ignore Target's Toughness. <b>Delayable.</b></td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-							<th></th>
-                            <td><b>My Game</b></td>
-                            <td><center>Sustain<br>Exploit</center></td>
-                            <td><center>All Heroes</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>When two Heroes are adjacent, they count as flanking. <i>Sust. Effect:</i> Repeat Effect.</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="white-text">Class Tide-Turners</p>
-                <table class="orange lighten-1 striped">
-                    <thead class="white-text">
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th><center>Type</center></th>
-                            <th><center>Target</center></th>
-                            <th><center>Range</center></th>
-                            <th></th>
-                            <th style="min-width:300px">Effect</th>
-                            <th><center>Action Speed</center></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="orange lighten-4">
-                        <tr>
-                            <th></th>
-                            <td><b>Drop</b></td>
-                            <td><center>General<br>Spell</center></td>
-                            <td><center>1 <i><b>FALLEN</b></i> Foe</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Target Foe gains [Tier+1]x10 HP (not exceeding their max HP) and will fight for the Chessmaster. All abilities which Target this Foe gain the <i><b>AUTO-HIT</b></i> property. At the beginning of the Chessmaster’s turn, this Foe moves up to 5 squares to the nearest Foe and makes a Basic Melee Attack using the Chessmaster’s <b>CAP</b> and dealing [Tier]d10 Damage. At the end of the Combat Encounter, this Foe becomes <i><b>FALLEN</b></i>.</td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Fear the King</b></td>
-                            <td><center>Sustain<br>Exploit</center></td>
-                            <td><center>Self</center></td>
-                            <td><center>-</center></td>
-                            <th></th>
-                            <td>You gain +2 Toughness and Resistance and gain +1 Damage Dice on Melee Attack Actions. <i>Sust. Effect:</i> Repeat Effect.</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Clever Laziness</b></td>
-                            <td><center>Sustain<br>Exploit</center></td>
-                            <td><center>All Heroes</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>All Target Heroes gain +2 <b>A</b>. If you have Inaugurate, Target Heroes instead gain a bonus based on their designation. <i>Sust. Effect:</i> Repeat Effect.
-								<br>&nbsp;&nbsp;&nbsp;&nbsp;Pawn: +2 <b>A</b>.
-								<br>&nbsp;&nbsp;&nbsp;&nbsp;Bishop: +2 Range.
-								<br>&nbsp;&nbsp;&nbsp;&nbsp;Rook: +2 Toughness.
-								<br>&nbsp;&nbsp;&nbsp;&nbsp;Knight: +1 Damage Dice on Damage-dealing Actions.
-								<br>&nbsp;&nbsp;&nbsp;&nbsp;Queen: Advantage on a roll once per Round.
-							</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-			<br><p><h5 class="white-text" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Tier 4</h5></p>
-			<div style="overflow-x: auto">
-                <p class="white-text">Class Traits</p>
-                <table class="red lighten-2 striped">
-                    <thead class="white-text">
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th><center>Type</center></th>
-                            <th><center>Target</center></th>
-                            <th><center>Range</center></th>
-                            <th></th>
-                            <th style="min-width:300px">Effect</th>
-                            <th><center>Action Speed</center></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="red lighten-4">
-                        <tr>
-                            <th></th>
-                            <td><b>Check</b></td>
-                            <td><center>Passive</center></td>
-                            <td><center>1+ Combatants</center></td>
-                            <td><center>Ranged<br>Field</center></td>
-                            <th></th>
-                            <td>At the start of Combat, declare 1 Foe and an additional Foe for each Hero that chooses to be affected by this ability. When targeted combatants are Flanked, they gain <i><b>FRAGILITY</b></i>. Kings are always affected by this ability and if a King is Flanked, all attacks against them are <i><b>AUTO-HIT</b><i> in addition.</td>
-                            <td><center>-</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Strength in Numbers</b></td>
-                            <td><center>Passive</center></td>
-                            <td><center>-</center></td>
-                            <td><center>-</center></td>
-                            <th></th>
-                            <td>When you use an Action on a Rook, Bishop, Knight, or Queen, it may also affect all other pieces of the same type. Once per Round.</td>
-                            <td><center>-</center></td>
-                            <th></th>
-                        </tr>                       
-                    </tbody>
-                </table>
-                <p class="white-text">Class Actions</p>
-                <table class="blue lighten-1 striped">
-                    <thead class="white-text">
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th><center>Type</center></th>
-                            <th><center>Target</center></th>
-                            <th><center>Range</center></th>
-                            <th></th>
-                            <th style="min-width:300px">Effect</th>
-                            <th><center>Action Speed</center></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="blue lighten-4">
-                        <tr>
-                            <th></th>
-                            <td><b>Queen's Elegance</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Hero</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Target Hero may make a Basic Weapon Attack with advantage on the CAP Check. <b>Delayable</b>.</td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Gold General's Spite</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Hero</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Target Hero may make a Basic Weapon Attack with +2 Damage Dice. <b>Delayable.</b></td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Unlock Potential</b></td>
-                            <td><center>Sustain<br>Exploit</center></td>
-                            <td><center>1 Other Hero</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>One of the Target Hero's Special Action Limits (Amplify, Sustain, Trigger) is increased by 1.</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Steel Resolve</b></td>
-                            <td><center>Trigger<br>Exploit</center></td>
-                            <td><center>1 Hero (Rook, Queen)</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Trig. Cond.: When Target Hero is hit with a Damage-dealing Action,
-							<br>Trig. Effect: Target Hero gains +4 Toughness. If the Target Hero takes no Damage from the triggering Action, the Target Hero may make a Basic Weapon Attack. <b>Inaugurate:</b> + 2 Toughness
-							</td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Healing Light</b></td>
-                            <td><center>General<br>Spell</center></td>
-                            <td><center>1 Hero (Bishop, Queen)</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Healing Light may not be used if you have taken a Move Action this Turn. Target Hero may heal themselves or another Hero within Range 3 for [Tier]x5 HP and you may not Take a Move Action until your next Turn. <b>Inaugurate:</b> +5 HP healed. <b>Delayable.</b></td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Dedication</b></td>
-                            <td><center>Trigger<br>Exploit</center></td>
-                            <td><center>1 Hero (Knight, Queen)</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Trig. Cond.: When Target Hero causes a Foe to become Fallen,
-							<br>Trig. Effect: Target Hero may make a Move Action towards another Foe. <b>Inaugurate:</b> +2 Speed for this action.
-							</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Death Do Us Part</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>1 Hero (Knight, Queen)</center></td>
-                            <td><center>Ranged<br>3</br></center></td>
-                            <th></th>
-                            <td>Trig. Cond.: When you are the Target of a Foe's Action,
-							<br>Trig. Effect: The Target Hero may choose to teleport adjacent to the Foe or teleport the Foe Adjacent to the Target Hero. The Target Hero makes a Basic Melee Attack before resolving the triggering Action. <b>Inaugurate:</b> +2<b>A</b>.
-							</td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-							<th></th>
-                            <td><b>My World</b></td>
-                            <td><center>Sustain<br>Exploit</center></td>
-                            <td><center>All Foes</center></td>
-                            <td><center>Ranged<br>Field</center></td>
-                            <th></th>
-                            <td>At the end of each Foe's Turn, if they are not within Range 3 (or Board) they are moved 1 Square closer to your Range (or Board). <i>Sust. Effect:</i> Repeat Effect.</td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="white-text">Class Tide-Turners</p>
-                <table class="orange lighten-1 striped">
-                    <thead class="white-text">
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th><center>Type</center></th>
-                            <th><center>Target</center></th>
-                            <th><center>Range</center></th>
-                            <th></th>
-                            <th style="min-width:300px">Effect</th>
-                            <th><center>Action Speed</center></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="orange lighten-4">
-                        <tr>
-                            <th></th>
-                            <td><b>Checkmate</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>Enemy King</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Enemy King becomes <i><b>FALLEN</b></i> if it is a Grunt. For each Other Hero adjacent to the Enemy King, this ability increases the tier of Foe which it can affect.</td>
-                            <td><center>Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Carpe Diem</b></td>
-                            <td><center>General<br>Exploit</center></td>
-                            <td><center>All Foes</center></td>
-                            <td><center>-</center></td>
-                            <th></th>
-                            <td>Carpe Diem may not be used if you have taken a Move Action this Turn. Target Foes skip their next Turn and you may not take a Move action this Turn.</td>
-                            <td><center>Slow+Slow</center></td>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td><b>Commanding Prowess</b></td>
-                            <td><center>Sustain<br>Exploit</center></td>
-                            <td><center>All Foes</center></td>
-                            <td><center>Ranged<br>3</center></td>
-                            <th></th>
-                            <td>Commanding Prowess may not be used if you have taken a Move Action this Turn. Target Foes are <i><b>PARALYZED</b></i> and you may not take a Move Action this Turn.</td>
-                            <td><center>Fast</center></td>
-                            <th></th>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
+            <div class="row">
+				<div class="col s12">
+					<ul class="tabs red lighten-2">
+						<li class="tab col s3"><a class="active white-text" href="#T1" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Tier 1</a></li>
+						<li class="tab col s3"><a class="white-text" href="#T2" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Tier 2</a></li>
+						<li class="tab col s3"><a class="white-text" href="#T3" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Tier 3</a></li>
+						<li class="tab col s3"><a class="white-text" href="#T4" style="font-family: 'Kungfont'; font-weight: normal; font-style: normal;">Tier 4</a></li>
+					</ul>
+				</div>
+				<div class="col s12" id="T1" style="overflow-x: auto">
+					<p class="white-text">Class Traits</p>
+					<table class="red lighten-2 striped">
+						<thead class="white-text">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th><center>Type</center></th>
+								<th><center>Target</center></th>
+								<th><center>Range</center></th>
+								<th></th>
+								<th style="min-width:300px">Effect</th>
+								<th><center>Action Speed</center></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody class="red lighten-4">
+							<tr>
+								<th></th>
+								<td><b>Aschente</b></td>
+								<td><center>Passive</center></td>
+								<td><center>1 Foe</center></td>
+								<td><center>Ranged<br>Field</center></td>
+								<th></th>
+								<td>At the start of Combat, you may place an 8x8 Local Field Effect that includes you within the effect. This is your Board. All of your Actions that have Ranged 3 now have Ranged Board, which includes all squares within the Board and no squares outside of it. You are a King and may also designate a Foe on the board as a King. Kings cannot leave the Board. You may cancel this effect as a Slow Action. If you have multiple abilities which designate Kings, you must designate the same Foe for all of them.</td>
+								<td><center>-</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Inaugurate</b></td>
+								<td><center>Passive</center></td>
+								<td><center>All Heroes</center></td>
+								<td><center>Ranged<br>Field</center></td>
+								<th></th>
+								<td>At the start of Combat, you gain 1 Queen, 2 Knights, 2 Bishops, 2 Rooks, and 8 Pawns as available designations. At any point during combat, you may designate Other Heroes as a piece and the designation lasts until the end of Combat and cannot be changed. Class Actions that list Pieces in the Target can only be used on those Pieces but gain their Inaugurate effect. Any action may be used on a Pawn without the Inaugurate effect.</td>
+								<td><center>-</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>King's Orders</b></td>
+								<td><center>Passive</center></td>
+								<td><center>All Other Heroes</center></td>
+								<td><center>Ranged<br>Field</center></td>
+								<th></th>
+								<td>At the start of each Other Hero’s turn, the Chessmaster may suggest an action for that Hero to take. That Hero gains a +/- 1 to a single roll or +1 square of movement for the next action they take this turn which follows the Chessmaster’s suggestion. <b>Inaugurate:</b> +/-2 instead.</td>
+								<td><center>-</center></td>
+								<th></th>
+							</tr>
+							
+						</tbody>
+					</table>
+					<p class="white-text">Class Actions</p>
+					<table class="blue lighten-1 striped">
+						<thead class="white-text">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th><center>Type</center></th>
+								<th><center>Target</center></th>
+								<th><center>Range</center></th>
+								<th></th>
+								<th style="min-width:300px">Effect</th>
+								<th><center>Action Speed</center></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody class="blue lighten-4">
+							<tr>
+								<th></th>
+								<td><b>Pawn's Might</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Hero</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Target Hero may make a Basic Melee Attack with +2 <b>A</b> to the <b>CAP</b> Check. <b>Delayable.</b></td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Bishop's Sight</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Hero</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Target Hero may make a Basic Ranged Attack with a +2 to Range. <b>Delayable.</b></td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Fortify</b></td>
+								<td><center>Sustain<br>Exploit</center></td>
+								<td><center>1 Hero (Rook, Queen)</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Fortify may not be used if you have taken a Move Action this turn. +3 Toughness and you cannot take a Move Action until your next Turn. <b>Inaugurate:</b> +1 Toughness. <i>Sust. Effect:</i> Repeat Effect.</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>En Passant</b></td>
+								<td><center>Trigger<br>Exploit</center></td>
+								<td><center>1 Hero (Pawn)</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td><i>Trig. Cond.:</i> If a Foe moves adjacent to Target Hero,<br><i>Trig. Effect:</i> -2 <b>A</b> to Target Hero's <b>CAP</b> Check. Target Hero makes a Basic Melee Attack. <b>Inaugurate:</b> There is no penalty to <b>A</b>.</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Empower</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Hero (Bishop, Knight, Queen)</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Empower may not be used if you have taken a Move Action this turn. +1 Damage <b><i>OR</i></b> Healing Die to Target Hero's next Action and you cannot take a Move Action until your next Turn. Once per Turn. <b>Inaugurate:</b> This may be used twice per Turn but the second use may not be on a Pawn.</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Mind Games</b></td>
+								<td><center>Trigger<br>Exploit</center></td>
+								<td><center>1 Foe</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td><i>Trig. Cond.:</i> If a Hero uses a Move or Shift action,<br><i>Trig. Effect:</i> You may move the Target Foe 1 square.</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>E1 to E3</b></td>
+								<td><center>Amplify<br>Exploit</center></td>
+								<td><center>1 Shift Action</center></td>
+								<td><center>-</center></td>
+								<th></th>
+								<td><i>Amp. Effect:</i> +1 Shift movement.</td>
+								<td><center>Free</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>My Turn</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>All Other Heroes</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>All Target Heroes may make a Shift Action. <i>Amp Effect:</i> Expend an additional Fast Action to allow 1 Target Hero to make a Basic Melee Attack after their Shift Action.</td>
+								<td><center>Slow+Fast</center></td>
+								<th></th>
+							</tr>
+						</tbody>
+					</table>
+					<p class="white-text">Class Tide-Turners</p>
+					<table class="orange lighten-1 striped">
+						<thead class="white-text">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th><center>Type</center></th>
+								<th><center>Target</center></th>
+								<th><center>Range</center></th>
+								<th></th>
+								<th style="min-width:300px">Effect</th>
+								<th><center>Action Speed</center></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody class="orange lighten-4">
+							<tr>
+								<th></th>
+								<td><b>Promotion</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Other Hero (Pawn)</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Target Hero may select 2 Class Actions from another Hero and use those actions as if they had them until the end of the encounter. <b>Inaugurate:</b> Gain 1 additional Class Action and the Chessmaster may change the Target Hero’s designation to any besides King.
+								</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Castling</b></td>
+								<td><center>Trigger<br>Exploit</center></td>
+								<td><center>1 Other Hero (Rook)</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td><i>Trig. Cond.:</i> If you are the Target of a Foe's Action,<br><i>Trig. Effect:</i> Cancel that Action. Swap positions with Target Hero. Target Hero gains +4 Toughness until the end of their next Turn. <b>Inaugurate:</b> +4 Resistance in addition.</td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Predict the Enemy</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>All Other Combatants</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Predict The Enemy may not be used if you have taken a Move Action this turn. At the beginning of your next Turn, you may move each Target Combatant to any other location within Range. Target Combatants are determined by who is in Range at the beginning of the Turn this activates. You cannot take a Move Action until your next Turn.</td>
+								<td><center>Slow+Slow</center></td>
+								<th></th>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+				<div class="col s12" id="T2" style="overflow-x: auto">
+					<p class="white-text">Class Traits</p>
+					<table class="red lighten-2 striped">
+						<thead class="white-text">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th><center>Type</center></th>
+								<th><center>Target</center></th>
+								<th><center>Range</center></th>
+								<th></th>
+								<th style="min-width:300px">Effect</th>
+								<th><center>Action Speed</center></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody class="red lighten-4">
+							<tr>
+								<th></th>
+								<td><b>Embody Piece</b></td>
+								<td><center>Amplify<br>Exploit</center></td>
+								<td><center>1 Action</center></td>
+								<td><center>-</center></td>
+								<th></th>
+								<td>When using an ability which lists a piece in its Target, you may grant the Target an additional effect based on the piece.
+								<br>&nbsp;&nbsp;&nbsp;&nbsp;Pawn: +2 <b>A</b> on next <b>CAP</b> check.
+								<br>&nbsp;&nbsp;&nbsp;&nbsp;Bishop: +2 Range on next Action.
+								<br>&nbsp;&nbsp;&nbsp;&nbsp;Rook: +2 Toughness for 1 Round.
+								<br>&nbsp;&nbsp;&nbsp;&nbsp;Knight: +1 Damage Dice next Damage-dealing Action.
+								<br>&nbsp;&nbsp;&nbsp;&nbsp;Queen: Advantage on next roll.
+								</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Perfect Timing</b></td>
+								<td><center>Passive</center></td>
+								<td><center>-</center></td>
+								<td><center>-</center></td>
+								<th></th>
+								<td>When you use an Action with the <b>Delayable</b> tag, the Chessmaster may allow the Target to choose when the ability is used instead of being used immediately. The Target may use the delayed Action on their Turn as a Free Action. A Hero may only have one Delayed Action at a time.</td>
+								<td><center>-</center></td>
+								<th></th>
+							</tr>                       
+						</tbody>
+					</table>
+					<p class="white-text">Class Actions</p>
+					<table class="blue lighten-1 striped">
+						<thead class="white-text">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th><center>Type</center></th>
+								<th><center>Target</center></th>
+								<th><center>Range</center></th>
+								<th></th>
+								<th style="min-width:300px">Effect</th>
+								<th><center>Action Speed</center></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody class="blue lighten-4">
+							<tr>
+								<th></th>
+								<td><b>Rook's Strength</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Hero</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Target Hero may make a Basic Melee Attack which pushes the Foe 3 squares directly away from the Target Hero. <b>Delayable</b>.</td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Lance's Charge</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Hero</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Target Hero may move up to 5 squares in a straight line and make a Basic Melee Attack with +2x[number of squares moved] extra damage. <b>Delayable.</b></td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Shifting Strike</b></td>
+								<td><center>Amplify<br>Exploit</center></td>
+								<td><center>1 Shift Action</center></td>
+								<td><center>-</center></td>
+								<th></th>
+								<td><i>Amp. Effect:</i> You may make a Basic Melee Attack after this Shift Action.</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Tactical Move</b></td>
+								<td><center>Amplify<br>Exploit</center></td>
+								<td><center>1 Shift Action</center></td>
+								<td><center>-</center></td>
+								<th></th>
+								<td><i>Amp. Effect:</i> You allow another Hero within Range 3 (or Board) to make an immediate Shift Action.</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Sword Eruption</b></td>
+								<td><center>General<br>Spell</center></td>
+								<td><center>1 Hero (Knight, Queen)</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Sword Eruption may not be used if you have taken a Move Action this turn. [Tier]d6 <i><b>PIERCING</b></i> Damage to all Foes in Range 1 of Target Hero and you cannot use a Move Action until your next Turn. <b>Inaugurate:</b> Damages all Foes in Range 2 of Target Hero instead. <b>Delayable.</b></td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Divine Lighting</b></td>
+								<td><center>General<br>Spell</center></td>
+								<td><center>1 Hero (Bishop, Queen)</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Divine Lightning may not be used if you have taken a Move Action this Turn. Target Hero deals [Tier+1]d6 <i><b>PIERCING</b></i> Damage to all Foes in a straight line up to Range 5. Each Foe hit reduces the damage that the next Foe receives by the amount that they received. You cannot take a Move Action until your next Turn. <b>Inaugurate:</b> Deals an additional Damage Die. <b>Delayable.</b></td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Binding Chains</b></td>
+								<td><center>General<br>Spell</center></td>
+								<td><center>1 Hero (Rook, Queen)</center></td>
+								<td><center>Ranged<br>3</br></center></td>
+								<th></th>
+								<td>Binding Chains may not be used if you have taken a Move Action this turn. All Foes within Range 2 of the Target Hero may not move from their square on their next Turn and you cannot take a Move Action until your next Turn. <b>Inaugurate:</b> Deal [Tier] Damage to each Foe affected. <b>Delayable.</b></td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>My Rules</b></td>
+								<td><center>Sustain<br>Spell</center></td>
+								<td><center>All Foes</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Foes can not leave the Range of this Action. <i>Sust. Effect:</i> Repeat Effect.</td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+						</tbody>
+					</table>
+					<p class="white-text">Class Tide-Turners</p>
+					<table class="orange lighten-1 striped">
+						<thead class="white-text">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th><center>Type</center></th>
+								<th><center>Target</center></th>
+								<th><center>Range</center></th>
+								<th></th>
+								<th style="min-width:300px">Effect</th>
+								<th><center>Action Speed</center></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody class="orange lighten-4">
+							<tr>
+								<th></th>
+								<td><b>Shifting Tides</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Other Hero</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Target Hero does not need to spend a Tide-Turner Charge on their next Tide-Turner.</td>
+								<td><center>Free</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>New Frame of Mind</b></td>
+								<td><center>Sustain<br>Exploit</center></td>
+								<td><center>All Foes</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>New Frame of Mind may not be used if you have taken a Move Action this turn. Target Foes has 4 vulnerability. You cannot take a Move Action until your next Turn. <i>Sust. Effect:</i> Repeat Effect.</td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Desperado</b></td>
+								<td><center>Trigger<br>Exploit</center></td>
+								<td><center>1 Hero</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td><i>Trig. cond:</i> When the Target Hero takes damage,
+								<br><i>Trig. Effect: </i>If this Damage would cause the Target Hero to become <i><b>FALLEN</b></i>, the Target Hero may immediately take a full turn before applying the Damage. Otherwise, the Target Hero may immediately make two Basic Weapon Attacks.</br>
+								</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+				<div class="col s12" id="T3" style="overflow-x: auto">
+					<p class="white-text">Class Traits</p>
+					<table class="red lighten-2 striped">
+						<thead class="white-text">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th><center>Type</center></th>
+								<th><center>Target</center></th>
+								<th><center>Range</center></th>
+								<th></th>
+								<th style="min-width:300px">Effect</th>
+								<th><center>Action Speed</center></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody class="red lighten-4">
+							<tr>
+								<th></th>
+								<td><b>King's Game</b></td>
+								<td><center>Passive</center></td>
+								<td><center>1 Foe</center></td>
+								<td><center>Ranged<br>Field</center></td>
+								<th></th>
+								<td>You are a King and may also designate a Foe on the board as a King at the start of the Combat Encounter. Kings may not Target Each other with Damage dealing abilities and may not move adjacent to each other. You may cancel this effect as a Slow Action. If you have multiple abilities which designate Kings, you must designate the same Foe for all of them.</td>
+								<td><center>-</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Shogi Board</b></td>
+								<td><center>Passive</center></td>
+								<td><center>-</center></td>
+								<td><center>-</center></td>
+								<th></th>
+								<td>At the start of Combat, you may place a 9x9 Local Field Effect. This is your Board. All of your Actions that have Ranged 3 now have Ranged Board, which includes all squares within the Board and no squares outside of it. You may cancel this effect as a Slow Action. If you have Aschente, this upgrades Aschente’s Board to 9x9.</td>
+								<td><center>-</center></td>
+								<th></th>
+							</tr>                       
+						</tbody>
+					</table>
+					<p class="white-text">Class Actions</p>
+					<table class="blue lighten-1 striped">
+						<thead class="white-text">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th><center>Type</center></th>
+								<th><center>Target</center></th>
+								<th><center>Range</center></th>
+								<th></th>
+								<th style="min-width:300px">Effect</th>
+								<th><center>Action Speed</center></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody class="blue lighten-4">
+							<tr>
+								<th></th>
+								<td><b>Knight's Spear</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Hero</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Target Hero may make a Basic Melee Attack with +2 Range. <b>Delayable</b>.</td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Silver General's Reposition</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Hero</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Target Hero may make a Basic Weapon Attack and then make an immediate Shift Action. <b>Delayable.</b></td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Like an Open Book</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Foe</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Target Foe rolls its d6 to determine its Action Chain for its next Turn immediately and the Chessmaster learns which Actions it will take. If playing with a Storyteller, they must tell the Chessmaster which Actions the Foe will take and must follow through with those Actions on the Foe’s next Turn.</td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Breakthrough</b></td>
+								<td><center>Amplify<br>Exploit</center></td>
+								<td><center>1 Action</center></td>
+								<td><center>-</center></td>
+								<th></th>
+								<td>Target Hero gains the Inaugurate effect of the Target Action if they do not already receive it. If you have Inaugurate, this can only be used on Actions that Target a Pawn.</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Bodyguard</b></td>
+								<td><center>Sustain<br>Exploit</center></td>
+								<td><center>1 Hero (Rook, Queen)</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Bodyguard may not be used if you have taken a Move Action this Turn. Heroes adjacent to the Target have Advantage on Dodge rolls and you cannot take a Move Action until your next Turn. <b>Inaugurate:</b> The Target Hero also have Advantage on Dodge rolls. <i>Sust. Effect:</i> Repeat Effect</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Crushing Presence</b></td>
+								<td><center>General<br>Spell</center></td>
+								<td><center>1 Hero (Bishop, Queen)</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Crushing Presence may not be used if you have taken a Move Action this Turn. All Foes within Range 3 of Target Hero are knocked PRONE and you cannot take a Move Action until your next Turn. <b>Inaugurate:</b> Affected Foes also gain the DAZE condition for 1 Round. <b>Delayable.</b></td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Opportune Strike</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Hero (Knight, Queen)</center></td>
+								<td><center>Ranged<br>3</br></center></td>
+								<th></th>
+								<td>Opportune Strike may not be used if you have taken a Move Action this Turn. Target Hero makes a Basic Melee Attack with <i><b>AUTO-HIT</b></i> and you cannot take a Move Action until your next Turn. <b>Inaugurate:</b> Ignore Target's Toughness. <b>Delayable.</b></td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>My Game</b></td>
+								<td><center>Sustain<br>Exploit</center></td>
+								<td><center>All Heroes</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>When two Heroes are adjacent, they count as flanking. <i>Sust. Effect:</i> Repeat Effect.</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+						</tbody>
+					</table>
+					<p class="white-text">Class Tide-Turners</p>
+					<table class="orange lighten-1 striped">
+						<thead class="white-text">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th><center>Type</center></th>
+								<th><center>Target</center></th>
+								<th><center>Range</center></th>
+								<th></th>
+								<th style="min-width:300px">Effect</th>
+								<th><center>Action Speed</center></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody class="orange lighten-4">
+							<tr>
+								<th></th>
+								<td><b>Drop</b></td>
+								<td><center>General<br>Spell</center></td>
+								<td><center>1 <i><b>FALLEN</b></i> Foe</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Target Foe gains [Tier+1]x10 HP (not exceeding their max HP) and will fight for the Chessmaster. All abilities which Target this Foe gain the <i><b>AUTO-HIT</b></i> property. At the beginning of the Chessmaster’s turn, this Foe moves up to 5 squares to the nearest Foe and makes a Basic Melee Attack using the Chessmaster’s <b>CAP</b> and dealing [Tier]d10 Damage. At the end of the Combat Encounter, this Foe becomes <i><b>FALLEN</b></i>.</td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Fear the King</b></td>
+								<td><center>Sustain<br>Exploit</center></td>
+								<td><center>Self</center></td>
+								<td><center>-</center></td>
+								<th></th>
+								<td>You gain +2 Toughness and Resistance and gain +1 Damage Dice on Melee Attack Actions. <i>Sust. Effect:</i> Repeat Effect.</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Clever Laziness</b></td>
+								<td><center>Sustain<br>Exploit</center></td>
+								<td><center>All Heroes</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>All Target Heroes gain +2 <b>A</b>. If you have Inaugurate, Target Heroes instead gain a bonus based on their designation. <i>Sust. Effect:</i> Repeat Effect.
+									<br>&nbsp;&nbsp;&nbsp;&nbsp;Pawn: +2 <b>A</b>.
+									<br>&nbsp;&nbsp;&nbsp;&nbsp;Bishop: +2 Range.
+									<br>&nbsp;&nbsp;&nbsp;&nbsp;Rook: +2 Toughness.
+									<br>&nbsp;&nbsp;&nbsp;&nbsp;Knight: +1 Damage Dice on Damage-dealing Actions.
+									<br>&nbsp;&nbsp;&nbsp;&nbsp;Queen: Advantage on a roll once per Round.
+								</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+				<div class="col s12" id="T4" style="overflow-x: auto">
+					<p class="white-text">Class Traits</p>
+					<table class="red lighten-2 striped">
+						<thead class="white-text">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th><center>Type</center></th>
+								<th><center>Target</center></th>
+								<th><center>Range</center></th>
+								<th></th>
+								<th style="min-width:300px">Effect</th>
+								<th><center>Action Speed</center></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody class="red lighten-4">
+							<tr>
+								<th></th>
+								<td><b>Check</b></td>
+								<td><center>Passive</center></td>
+								<td><center>1+ Combatants</center></td>
+								<td><center>Ranged<br>Field</center></td>
+								<th></th>
+								<td>At the start of Combat, declare 1 Foe and an additional Foe for each Hero that chooses to be affected by this ability. When targeted combatants are Flanked, they gain <i><b>FRAGILITY</b></i>. Kings are always affected by this ability and if a King is Flanked, all attacks against them are <i><b>AUTO-HIT</b><i> in addition.</td>
+								<td><center>-</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Strength in Numbers</b></td>
+								<td><center>Passive</center></td>
+								<td><center>-</center></td>
+								<td><center>-</center></td>
+								<th></th>
+								<td>When you use an Action on a Rook, Bishop, Knight, or Queen, it may also affect all other pieces of the same type. Once per Round.</td>
+								<td><center>-</center></td>
+								<th></th>
+							</tr>                       
+						</tbody>
+					</table>
+					<p class="white-text">Class Actions</p>
+					<table class="blue lighten-1 striped">
+						<thead class="white-text">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th><center>Type</center></th>
+								<th><center>Target</center></th>
+								<th><center>Range</center></th>
+								<th></th>
+								<th style="min-width:300px">Effect</th>
+								<th><center>Action Speed</center></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody class="blue lighten-4">
+							<tr>
+								<th></th>
+								<td><b>Queen's Elegance</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Hero</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Target Hero may make a Basic Weapon Attack with advantage on the CAP Check. <b>Delayable</b>.</td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Gold General's Spite</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Hero</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Target Hero may make a Basic Weapon Attack with +2 Damage Dice. <b>Delayable.</b></td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Unlock Potential</b></td>
+								<td><center>Sustain<br>Exploit</center></td>
+								<td><center>1 Other Hero</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>One of the Target Hero's Special Action Limits (Amplify, Sustain, Trigger) is increased by 1.</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Steel Resolve</b></td>
+								<td><center>Trigger<br>Exploit</center></td>
+								<td><center>1 Hero (Rook, Queen)</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Trig. Cond.: When Target Hero is hit with a Damage-dealing Action,
+								<br>Trig. Effect: Target Hero gains +4 Toughness. If the Target Hero takes no Damage from the triggering Action, the Target Hero may make a Basic Weapon Attack. <b>Inaugurate:</b> + 2 Toughness
+								</td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Healing Light</b></td>
+								<td><center>General<br>Spell</center></td>
+								<td><center>1 Hero (Bishop, Queen)</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Healing Light may not be used if you have taken a Move Action this Turn. Target Hero may heal themselves or another Hero within Range 3 for [Tier]x5 HP and you may not Take a Move Action until your next Turn. <b>Inaugurate:</b> +5 HP healed. <b>Delayable.</b></td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Dedication</b></td>
+								<td><center>Trigger<br>Exploit</center></td>
+								<td><center>1 Hero (Knight, Queen)</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Trig. Cond.: When Target Hero causes a Foe to become Fallen,
+								<br>Trig. Effect: Target Hero may make a Move Action towards another Foe. <b>Inaugurate:</b> +2 Speed for this action.
+								</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Death Do Us Part</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>1 Hero (Knight, Queen)</center></td>
+								<td><center>Ranged<br>3</br></center></td>
+								<th></th>
+								<td>Trig. Cond.: When you are the Target of a Foe's Action,
+								<br>Trig. Effect: The Target Hero may choose to teleport adjacent to the Foe or teleport the Foe Adjacent to the Target Hero. The Target Hero makes a Basic Melee Attack before resolving the triggering Action. <b>Inaugurate:</b> +2<b>A</b>.
+								</td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>My World</b></td>
+								<td><center>Sustain<br>Exploit</center></td>
+								<td><center>All Foes</center></td>
+								<td><center>Ranged<br>Field</center></td>
+								<th></th>
+								<td>At the end of each Foe's Turn, if they are not within Range 3 (or Board) they are moved 1 Square closer to your Range (or Board). <i>Sust. Effect:</i> Repeat Effect.</td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+						</tbody>
+					</table>
+					<p class="white-text">Class Tide-Turners</p>
+					<table class="orange lighten-1 striped">
+						<thead class="white-text">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th><center>Type</center></th>
+								<th><center>Target</center></th>
+								<th><center>Range</center></th>
+								<th></th>
+								<th style="min-width:300px">Effect</th>
+								<th><center>Action Speed</center></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody class="orange lighten-4">
+							<tr>
+								<th></th>
+								<td><b>Checkmate</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>Enemy King</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Enemy King becomes <i><b>FALLEN</b></i> if it is a Grunt. For each Other Hero adjacent to the Enemy King, this ability increases the tier of Foe which it can affect.</td>
+								<td><center>Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Carpe Diem</b></td>
+								<td><center>General<br>Exploit</center></td>
+								<td><center>All Foes</center></td>
+								<td><center>-</center></td>
+								<th></th>
+								<td>Carpe Diem may not be used if you have taken a Move Action this Turn. Target Foes skip their next Turn and you may not take a Move action this Turn.</td>
+								<td><center>Slow+Slow</center></td>
+								<th></th>
+							</tr>
+							<tr>
+								<th></th>
+								<td><b>Commanding Prowess</b></td>
+								<td><center>Sustain<br>Exploit</center></td>
+								<td><center>All Foes</center></td>
+								<td><center>Ranged<br>3</center></td>
+								<th></th>
+								<td>Commanding Prowess may not be used if you have taken a Move Action this Turn. Target Foes are <i><b>PARALYZED</b></i> and you may not take a Move Action this Turn.</td>
+								<td><center>Fast</center></td>
+								<th></th>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
         </div>
         <br>
         
@@ -938,6 +944,7 @@
                 $('.sidenav').sidenav();
                 $('.collapsible').collapsible();
                 $(".dropdown-content>li>a").css("color", "#ffffff");
+				$('.tabs').tabs();
             });
         </script>
     </body>
